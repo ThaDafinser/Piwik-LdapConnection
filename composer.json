@@ -1,0 +1,13 @@
+{
+    "name": "thadafinser/ldap-connection",
+    "description": "Provide a LDAP connection + settings for PIWIK",
+    "keywords": [
+        "piwik",
+        "ldap"
+    ],
+    "homepage": "https://github.com/ThaDafinser/LdapConnection",
+    "require": {
+        "php": ">=5.3.23",
+        "zendframework/zend-ldap": "2.3.*"
+    }
+}

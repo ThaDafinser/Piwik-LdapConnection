@@ -1,0 +1,16 @@
+{
+  "name": "LdapConnection",
+  "version": "0.1.0",
+  "description": "Plugin to make a LDAP connection, which can be used by various LDAP plugins",
+  "keywords": ["LDAP", "connection", "ActiveDirectory", "AD", "ThaDafinser"],
+  "license": "GPL v3",
+  "homepage": "https://github.com/ThaDafinser/LdapConnection",
+  "authors": [
+    {"name": "Martin Keckeis", "homepage": "https://github.com/thadafinser"}
+  ],
+  "theme": false,
+  "require": {
+    "piwik": "2.5.0",
+    "php": "5.4.0"
+  }
+}

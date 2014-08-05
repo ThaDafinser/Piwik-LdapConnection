@@ -1,0 +1,104 @@
+[
+    {
+        "name": "zendframework/zend-stdlib",
+        "version": "2.3.1",
+        "version_normalized": "2.3.1.0",
+        "target-dir": "Zend/Stdlib",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/Component_ZendStdlib.git",
+            "reference": "c1f4830018b5d4f034d32fa01a9e17ea176f56f6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/Component_ZendStdlib/zipball/c1f4830018b5d4f034d32fa01a9e17ea176f56f6",
+            "reference": "c1f4830018b5d4f034d32fa01a9e17ea176f56f6",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.23"
+        },
+        "require-dev": {
+            "zendframework/zend-eventmanager": "self.version",
+            "zendframework/zend-serializer": "self.version",
+            "zendframework/zend-servicemanager": "self.version"
+        },
+        "suggest": {
+            "zendframework/zend-eventmanager": "To support aggregate hydrator usage",
+            "zendframework/zend-serializer": "Zend\\Serializer component",
+            "zendframework/zend-servicemanager": "To support hydrator plugin manager usage"
+        },
+        "time": "2014-04-15 15:28:48",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.3-dev",
+                "dev-develop": "2.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Zend\\Stdlib\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "keywords": [
+            "stdlib",
+            "zf2"
+        ]
+    },
+    {
+        "name": "zendframework/zend-ldap",
+        "version": "2.3.1",
+        "version_normalized": "2.3.1.0",
+        "target-dir": "Zend/Ldap",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/Component_ZendLdap.git",
+            "reference": "96d43dc6f54423532c7700902d046067b29a33df"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/Component_ZendLdap/zipball/96d43dc6f54423532c7700902d046067b29a33df",
+            "reference": "96d43dc6f54423532c7700902d046067b29a33df",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.23",
+            "zendframework/zend-stdlib": "self.version"
+        },
+        "require-dev": {
+            "zendframework/zend-eventmanager": "self.version"
+        },
+        "suggest": {
+            "zendframework/zend-eventmanager": "Zend\\EventManager component"
+        },
+        "time": "2014-04-15 15:29:08",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.3-dev",
+                "dev-develop": "2.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Zend\\Ldap\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "provides support for LDAP operations including but not limited to binding, searching and modifying entries in an LDAP directory",
+        "keywords": [
+            "ldap",
+            "zf2"
+        ]
+    }
+]

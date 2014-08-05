@@ -34,3 +34,8 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+.project
+.buildpath
+.settings/org.eclipse.php.core.prefs
+.settings/org.eclipse.wst.validation.prefs
