@@ -1,0 +1,44 @@
+{% extends 'admin.twig' %}
+
+{% block content %}
+<div class="entityContainer">
+<h2>{{ 'LDAP connection test'|translate }}</h2>
+
+<h3>Connection test</h3>
+<p>
+{% if connectionSuccess == true %}
+	<span style="color: green">
+		Successfull
+	</span>
+{% else %}
+	<pre style="color: red">{{ exception }}</pre>
+{% endif %}
+</p>
+
+<h3>Bind test</h3>
+<p>
+{% if bindSuccess == true %}
+	<span style="color: green">
+		Successfull
+	</span>
+{% else %}
+	<pre style="color: red">{{ exception }}</pre>
+{% endif %}
+</p>
+
+<h3>Bound username</h3>
+<p>
+	{{ boundUser }}
+</p>
+
+<h3>Used settings</h3>
+<p>
+<ul>
+{% for name,value in options %}
+	<li>{{ name }}: {{ value }}</li>
+{% endfor %}
+</ul>
+</p>
+
+</div>
+{% endblock %}
