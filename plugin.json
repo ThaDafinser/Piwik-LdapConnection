@@ -1,10 +1,10 @@
 {
   "name": "LdapConnection",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Plugin to make a LDAP connection, which can be used by various LDAP plugins",
   "keywords": ["LDAP", "connection", "ActiveDirectory", "AD", "ThaDafinser"],
   "license": "GPL v3",
-  "homepage": "https://github.com/ThaDafinser/LdapConnection",
+  "homepage": "https://github.com/ThaDafinser/Piwik-LdapConnection",
   "authors": [
     {"name": "Martin Keckeis", "homepage": "https://github.com/thadafinser"}
   ],
