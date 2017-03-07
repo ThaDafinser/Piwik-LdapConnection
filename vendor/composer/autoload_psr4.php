@@ -6,4 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Zend\\Ldap\\' => array($vendorDir . '/zendframework/zend-ldap/src'),
 );

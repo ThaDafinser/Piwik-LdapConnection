@@ -36,18 +36,29 @@ class API extends \Piwik\Plugin\API
         if ($this->ldap === null) {
             require __DIR__ . '/vendor/autoload.php';
             
-            $settings = new Settings('LdapConnection');
-            $settings = $settings->getSettings();
+            $settings = new SystemSettings();
+           
             
-            $settingValues = [];
-            foreach ($settings as $key => $setting) {
-                $value = $setting->getValue();
-                if ($value == '') {
-                    $value = null;
-                }
+            $settingValues = [
+                'host' =>  $settings->host->getValue(),
+                'port' =>  $settings->port->getValue(),
                 
-                $settingValues[$key] = $value;
-            }
+                'baseDn' =>  $settings->baseDn->getValue(),
+                'username' =>  $settings->username->getValue(),
+                'password' =>  $settings->password->getValue(),
+                
+                'bindRequiresDn' =>  $settings->bindRequiresDn->getValue(),
+                'useSsl' =>  $settings->useSsl->getValue(),
+                'useStartTls' =>  $settings->useStartTls->getValue(),
+                'accountCanonicalForm' =>  $settings->accountCanonicalForm->getValue(),
+                'accountDomainName' =>  $settings->accountDomainName->getValue(),
+                'accountDomainNameShort' =>  $settings->accountDomainNameShort->getValue(),
+                'accountFilterFormat' =>  $settings->accountFilterFormat->getValue(),
+                'allowEmptyPassword' =>  $settings->allowEmptyPassword->getValue(),
+                'optReferrals' =>  $settings->optReferrals->getValue(),
+                'tryUsernameSplit' =>  $settings->tryUsernameSplit->getValue(),
+                'networkTimeout' =>  $settings->networkTimeout->getValue(),
+            ];
             
             $ldap = new Ldap($settingValues);
             
