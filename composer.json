@@ -7,7 +7,7 @@
     ],
     "homepage": "https://github.com/ThaDafinser/LdapConnection",
     "require": {
-        "php": ">=5.3.23",
-        "zendframework/zend-ldap": "2.3.*"
+        "php": "^7.0",
+        "zendframework/zend-ldap": "^2.8"
     }
 }
